@@ -11,9 +11,9 @@ class MovieCard extends React.Component {
           <img src={ imagePath } alt="Capa do Filme" />
         </div>
         <div className="movie-card-body">
-          <div className="movie-card-title">
+          <h4 className="movie-card-title">
             {title}
-          </div>
+          </h4>
           <div className="movie-card-subtitle">
             {subtitle}
           </div>
