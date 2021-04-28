@@ -5,7 +5,9 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-      <h1>Olá</h1>
+      <header>
+        <h1>Movie Cards Library</h1>
+      </header>
     );
   }
 }
