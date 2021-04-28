@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 function MovieList(props) {
   return (
     <div>
-      {props.movies.map((movie) => <MovieCard movie={movie} />)}
+      {props.movies.map((movie) => <MovieCard key={movie.title} movie={movie} />)}
     </div>
   )
 }
