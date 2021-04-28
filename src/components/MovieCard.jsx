@@ -13,9 +13,7 @@ const MovieCard = ({ movie }) => (
     <p>
       {movie.storyline}
     </p>
-    <p>
-      {movie.imagePath}
-    </p>
+    <img src={ movie.imagePath } alt="Banner do filme" />
     <p>
       {movie.rating}
     </p>
