@@ -2,15 +2,14 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
+import movies from './data';
 
 function App() {
-
-  const arrayObj = {};
 
   return (
     <div className="App">
      <Header />
-     <MovieList movies={arrayObj}/>
+     <MovieList movies={movies}/>
     </div>
   )
 }
