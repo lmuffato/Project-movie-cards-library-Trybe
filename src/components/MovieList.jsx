@@ -26,7 +26,7 @@ MovieList.propTypes = {
 // Código do Lucas Pedroso (https://github.com/tryber/sd-010-a-project-movie-cards-library/pull/1)
 // me ajudou a descobrir o problema que o Linter estava acusando e resolver dessa forma:
 MovieList.defaultProps = {
-  movies: [],
+  movies: {},
 };
 
 export default MovieList;
