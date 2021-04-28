@@ -1,9 +1,12 @@
 // implement MovieList component here
 import React from 'react';
+import MovieCard from './MovieCard';
 
 function MovieList(props) {
   return (
-    <h1>Ola</h1>
+    <div>
+      <MovieCard />
+    </div>
   );
 }
 
