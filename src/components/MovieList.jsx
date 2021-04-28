@@ -1,6 +1,6 @@
 import React from 'react';
-import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class MovieList extends React.Component {
 
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
-  map: PropTypes.func,
+  map: PropTypes.func.isRequired,
 };
 
 export default MovieList;
