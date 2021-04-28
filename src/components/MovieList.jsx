@@ -6,6 +6,7 @@ class MovieList extends React.Component {
     // const { movies } = this.props;
     return (
       <section id="movie-list">
+        <p>Test</p>
       </section>
     );
   }
