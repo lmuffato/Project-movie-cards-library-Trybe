@@ -14,5 +14,5 @@ function MovieList(props) {
 export default MovieList;
 
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(Object).isRequired,
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
