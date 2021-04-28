@@ -4,7 +4,7 @@ import MovieCard from './MovieCard';
 
 function MovieList({ movies }) {
   return (
-    <section>
+    <section className="movie-list">
       {movies.map((movie) => (
         <MovieCard key={ movie.title } movie={ movie } />
       ))}
