@@ -1,8 +1,10 @@
 // implement MovieCard component here
 import React from 'react';
+import Rating from './Rating';
 
 function MovieCard() {
-  return (<h1>Movie Cards Library</h1>
+  return (
+    <Rating />
   );
 }
 
