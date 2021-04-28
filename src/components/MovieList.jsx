@@ -9,7 +9,7 @@ function MovieList(props) {
 
   return (
     <section>
-      { movies.map((movie) => <MovieCard key={ movie.title } movieInfo={ movie } />) }
+      { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
     </section>
   );
 }
