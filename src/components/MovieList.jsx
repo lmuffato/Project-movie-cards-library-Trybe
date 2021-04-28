@@ -1,9 +1,9 @@
 // implement MovieList component here
 import React from 'react';
 
-function MovieList() {
+function MovieList(props) {
   return (
-    
+    <h1>Ola</h1>
   );
 }
 
