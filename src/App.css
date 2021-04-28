@@ -6,7 +6,7 @@ body {
 
 .App {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1400px;
 }
 
 .movie-card-header {
@@ -27,6 +27,7 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 48px 30px;
 }
 
