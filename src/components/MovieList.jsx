@@ -3,9 +3,15 @@ import React from 'react';
 import MovieCard from './MovieCard';
 
 function MovieList() {
-//   const movies = [];
+  const movies = ['A barraca do beijo1', 'A barraca do beijo2', 'A barraca do beijo3'];
+  const returnMovies = movies.map((item, index) => (<li key={ index }>{item}</li>));
   return (
-    <MovieCard />
+    <div>
+      <MovieCard />
+      <ul>
+        {returnMovies}
+      </ul>
+    </div>
   );
 }
 
