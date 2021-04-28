@@ -4,15 +4,17 @@ import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
-    const { value } = this.props;
+    const { rating } = this.props;
     return (
-      <div className="rating">{value}</div>
+      <div className="movie-card-rating">
+        <div className="rating">{rating}</div>
+      </div>
     );
   }
 }
 
 Rating.propTypes = {
-  value: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
 };
 
 export default Rating;
