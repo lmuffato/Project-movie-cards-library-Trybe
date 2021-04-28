@@ -1,15 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { imagePath } = this.props.movie
+    const { movie } = this.props;
+    const { imagePath, title } = movie;
     return (
       <div>
         <img src={ imagePath } alt="foto do filme" />
-        <h1>Movie Card</h1>
+        <h4>{title}</h4>
       </div>
     );
   }
 }
 
+// referencia sobre proptypes array com shape https://stackoverflow.com/questions/32325912/react-proptype-array-with-shape
+MovieCard.propTypes = {
+  movie: PropTypes.arrayOf(PropTypes.shape({
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  })).isRequired,
+};
 export default MovieCard;
