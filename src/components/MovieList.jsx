@@ -1,9 +1,9 @@
 // implement MovieList component here
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
-import movies from '../data';
 
-function MovieList() {
+function MovieList({ movies }) {
   return (
     <div className="movie-list">
       {movies.map((movie) => (
@@ -12,5 +12,9 @@ function MovieList() {
     </div>
   );
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default MovieList;
