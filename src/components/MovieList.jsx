@@ -11,7 +11,7 @@ function Movielist({ movies }) {
 }
 
 Movielist.propTypes = {
-  movies: PropTypes.string.isRequired,
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Movielist;
