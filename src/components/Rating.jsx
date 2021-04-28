@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Rating({ rating }) {
-    return <span>{rating}</span>;
+  return <span className="rating">{rating}</span>;
 }
 
-    export default Rating;
+export default Rating;
