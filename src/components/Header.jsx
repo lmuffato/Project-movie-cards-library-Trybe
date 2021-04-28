@@ -2,9 +2,7 @@ import React from 'react';
 
 function Header() {
   return (
-    <section className="movie-card-header">
-      <h1>Bora começar</h1>
-    </section>
+    <h1 className="movie-card-header">Bora começar</h1>
   );
 }
 export default Header;

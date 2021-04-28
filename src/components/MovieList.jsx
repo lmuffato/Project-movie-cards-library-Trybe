@@ -1,11 +1,10 @@
-/* eslint-disable import/no-unresolved */
-// implement MovieList component here
 import React from 'react';
+import MovieCard from './MovieCard';
 
 function MovieList() {
   return (
     <section className="movie-list">
-      <span>Movie List</span>
+      <MovieCard />
     </section>
   );
 }
