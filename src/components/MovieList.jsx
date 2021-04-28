@@ -3,11 +3,14 @@ import React from 'react';
 import MovieCard from './MovieCard';
 
 function MovieList(props) {
+
+
+
   return (
     <div>
       {Array.map((element) => {
         return (
-          <MovieCard key={element} />
+          <MovieCard movies={element} />
         )
       })}
       
