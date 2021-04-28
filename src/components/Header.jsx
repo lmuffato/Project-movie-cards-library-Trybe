@@ -5,9 +5,9 @@ class Header extends React.Component {
     const h1 = <h1>Movie Cards Library</h1>;
     const header = <header>{h1}</header>;
     return (
-        header
-        );
-    };
+      header
+    );
+  }
 }
 
 export default Header;
