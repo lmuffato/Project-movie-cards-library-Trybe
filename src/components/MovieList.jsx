@@ -6,7 +6,7 @@ function MovieList({ movies }) {
     <div>
       {movies.map((movie) => {
         return <MovieCard key={ movie.title } />;
-        })}
+      })}
     </div>
   );
 }
