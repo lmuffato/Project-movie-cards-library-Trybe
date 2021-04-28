@@ -6,6 +6,7 @@ function MovieCard(props) {
     <section>
       <img src={ imagePath } alt="capa do filme" />
       <h4>{ title }</h4>
+      <h5>{ subtitle }</h5>
     </section>
   );
 }
