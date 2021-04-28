@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 
+import Header from './components/Header';
+
 function App() {
   return (
     <section className="App">
-Welcome to the Jungle
+      <Header />
     </section>
   );
 }
