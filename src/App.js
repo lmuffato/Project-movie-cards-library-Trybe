@@ -11,6 +11,7 @@ function App() {
         <Header />
       </div>
       <MovieList movies={ data } />
+
     </div>
   );
 }
