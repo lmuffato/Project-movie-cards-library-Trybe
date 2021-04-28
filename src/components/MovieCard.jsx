@@ -7,9 +7,9 @@ const MovieCard = ({ movie }) => (
     <h4>
       {movie.title}
     </h4>
-    <p>
+    <h5>
       {movie.subtitle}
-    </p>
+    </h5>
     <p>
       {movie.storyline}
     </p>
