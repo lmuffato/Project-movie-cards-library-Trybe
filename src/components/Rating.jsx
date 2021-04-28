@@ -2,7 +2,7 @@ import React from 'react';
 
 function Rating(props) {
   return (
-    <p>{props.rating}</p>
+    <p className="rating">{props.rating}</p>
   );
 }
 
