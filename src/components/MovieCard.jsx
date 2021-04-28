@@ -1,7 +1,7 @@
 // implement MovieCard component here
 import React from 'react';
 
-function MovieCard() {
+function MovieCard(props) {
   return (
     <h1>Ola jovem</h1>
   )

@@ -5,7 +5,12 @@ import MovieCard from './MovieCard';
 function MovieList(props) {
   return (
     <div>
-      <MovieCard />
+      {Array.map((element) => {
+        return (
+          <MovieCard key={element} />
+        )
+      })}
+      
     </div>
   );
 }
