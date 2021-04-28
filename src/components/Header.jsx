@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Header() {
-    <h1></h1>
+  return (
+    <header>
+      <h1>Movie Cards Library</h1>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
