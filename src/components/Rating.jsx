@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Rating extends Component {
+// Codigo consultado em: https://github.com/tryber/sd-09-project-movie-cards-library/pull/115/files?file-filters%5B%5D=.jsx
+class Rating extends React.Component {
   render() {
-    const { movie } = this.props;
-    const { rating } = movie;
+    const { rating } = this.props;
+
     return (
-      <fieldset>
-        <p>{rating}</p>
-      </fieldset>
+      <div className="movie-card-rating">
+        <p className="rating">
+          {rating}
+        </p>
+      </div>
     );
   }
 }
 
 Rating.propTypes = {
-  movie: propTypes.object,
-  rating: propTypes.number,
+  rating: PropTypes.number,
+};
+
+Rating.defaultProps = {
+  rating: 5,
 };
 
 export default Rating;
