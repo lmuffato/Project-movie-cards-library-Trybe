@@ -3,13 +3,6 @@ import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 class MovieCard extends React.Component {
-  // static propTypes = {
-  //   title: PropTypes.string,
-  //   subtitle: PropTypes.string,
-  //   storyline: PropTypes.string,
-  //   rating: PropTypes.number,
-  //   imagePath: PropTypes.string,
-  // };
   render() {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
@@ -22,7 +15,6 @@ class MovieCard extends React.Component {
         </section>
         <Rating rating={ rating } />
       </section>
-
     );
   }
 }
