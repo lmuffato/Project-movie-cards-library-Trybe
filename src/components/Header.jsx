@@ -1,16 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function Header(props) {
+function Header() {
   return (
     <header>
-      <h1>{ props.text }</h1>
+      <h1>Movie Cards Library</h1>
     </header>
   );
 }
-
-Header.propTypes = {
-  text: PropTypes.string.isRequired,
-};
 
 export default Header;

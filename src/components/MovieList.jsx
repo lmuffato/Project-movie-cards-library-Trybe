@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 function MovieList(props) {
+  const { movies } = props;
   return (
     <>
-      {props.movies.map((movie) => <MovieCard key={ movie.title } movieProp={ movie } />)}
+      {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
     </>
   );
 }

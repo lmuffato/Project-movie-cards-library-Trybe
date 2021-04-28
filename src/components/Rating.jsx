@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Rating(props) {
+  const { rating } = props;
   return (
-    <span>{ props.rating }</span>
+    <div>
+      <span>{rating}</span>
+    </div>
   );
 }
 
