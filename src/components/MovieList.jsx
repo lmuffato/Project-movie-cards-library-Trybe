@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 const MovieList = ({ movies }) => (
-  <section>
+  <section className="movie-list">
     {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
   </section>
 );
