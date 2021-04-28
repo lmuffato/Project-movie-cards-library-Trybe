@@ -1,20 +1,10 @@
 // implement MovieList component here
 import React from 'react';
-import movies from '../data';
+//import movies from '../data';
+//const {title, subtitle, storyline, rating, imagePath} = movies;
 
-const {title, subtitle, storyline, rating, imagePath} = movies;
-
-function MovieList(prop) {
-    return ( <h1> ola </h1>
-        
-    //     {movies = {
-    //     title: prop.title,
-    //     subtitle: prop.subtitle,
-    //     storyline: prop.storyline,
-    //     rating: prop.rating,
-    //     imagePath: prop.imagePath
-    //  } }
-)
+function MovieList() {
+    return (<h1> ola </h1>);
 }
 
 export default MovieList
