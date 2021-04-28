@@ -6,7 +6,9 @@ function Header() {
 //   const titulo = <header> </header>;
   return (
     // titulo
-    <header> </header>
+    <header>
+      <h1>Movie Cards Library</h1>
+    </header>
   );
 }
 
