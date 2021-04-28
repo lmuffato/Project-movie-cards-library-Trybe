@@ -30,14 +30,14 @@ const movies = [
 ];
 
 describe('11 - Crie um componente `<Rating />`', () => {
-  it.skip('Renderize o componente `<Rating />`', () => {
+  it('Renderize o componente `<Rating />`', () => {
     shallow(<Rating />);
   });
 });
 
 describe('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   let wrapper;
-  it.skip('Renderize a nota de um filme dentro de `Rating`', () => {
+  it('Renderize a nota de um filme dentro de `Rating`', () => {
     wrapper = shallow(<Rating rating={ 3 } />);
     expect(wrapper.find('.rating').text()).toEqual('3');
   });
