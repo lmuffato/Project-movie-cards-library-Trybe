@@ -1,11 +1,11 @@
 import React from 'react';
 
-function MovieCard(movie) {
+function MovieCard(key) {
   return (
     <div>
-        <p>o filme é {movie.movie}</p>
+        <p>o filme é {console.log(key)}</p>
     </div>
-  )
+  );
 }
 
 export default MovieCard
