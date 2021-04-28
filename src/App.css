@@ -4,6 +4,11 @@ body {
   font-size: 16px;
 }
 
+.App {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
@@ -38,7 +43,8 @@ body {
 }
 
 
-.movie-card-image {
+.movie-card-image img {
+  height: 150px;
   width: 100%;
 }
 
