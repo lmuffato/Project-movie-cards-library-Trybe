@@ -2,9 +2,10 @@
 import React from 'react';
 
 function Rating(props) {
+  const { nota } = props
   return (
-    <p className='rating'>{props.nota}</p>
-  )
+    <p className="rating">{nota}</p>
+  );
 }
 
 export default Rating;
