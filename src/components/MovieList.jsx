@@ -1,10 +1,10 @@
-import React from 'react'
-import MovieCard from './MovieCard'
+import React from 'react';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
-    render() {
-        return <MovieCard />
-    }
+  render() {
+    return <MovieCard />
+  }
 }
 
-export default MovieList
+export default MovieList;
