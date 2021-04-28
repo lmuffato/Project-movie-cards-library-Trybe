@@ -1,5 +1,6 @@
 // implement MovieCard component here
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function MovieCard(props) {
   const { movies } = props;
@@ -12,4 +13,8 @@ function MovieCard(props) {
     </div>
   );
 }
+
+MovieCard.propTypes = {
+  movies: PropTypes.string.isRequired,
+};
 export default MovieCard;
