@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
-function MovieCard(props) {
-  const { title, subtitle, storyline, rating, imagePath } = props.movie;
+function MovieCard({ movie }) {
+  const { title, subtitle, storyline, rating, imagePath } = movie;
   return (
     <div>
       <img src={ imagePath } alt={ title } />
@@ -16,11 +16,13 @@ function MovieCard(props) {
 }
 
 MovieCard.propTypes = {
-  title: PropTypes.string.isRequired,
-//   subtitle: PropTypes.string.isRequired,
-//   storyline: PropTypes.string.isRequired,
-//   rating: PropTypes.number.isRequired,
-//   imagePath: PropTypes.string.isRequired,
+  movie: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    imagePath: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default MovieCard;
