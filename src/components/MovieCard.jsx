@@ -7,7 +7,7 @@ function MovieCard(props) {
 
   return (
     <section>
-      <p>{title}</p>
+      <h4>{title}</h4>
       <p>{subtitle}</p>
       <p>{storyline}</p>
       <img src={imagePath} alt='Capa do filme'/>
