@@ -27,6 +27,14 @@ header {
 
 }
 
+.Rating {
+  /* background-color: rgb(170, 170, 170);
+  border-radius: 25px;
+  padding: 5px;
+  width: 20px;
+  height: 15px; */
+}
+
 .MovieCard {
   display: flex;
   flex-wrap: wrap;
