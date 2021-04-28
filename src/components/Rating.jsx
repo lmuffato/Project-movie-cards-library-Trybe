@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Rating(props) {
-  const { rating } = props;
-
-  return (
-    <p>{ rating }</p>
-  );
+class Rating extends React.Component {
+  render() {
+    const { rating } = this.props;
+    return (
+      <div>
+        <div className="rating">
+          { rating }
+        </div>
+      </div>
+    );
+  }
 }
 
 Rating.propTypes = {
