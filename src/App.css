@@ -64,7 +64,8 @@ body {
 }
 
 .movie-card-storyline {
-  font-size: 14px;
+  font-size: 18px;
+  padding: 0 8px;
   text-align: justify;
 }
 
