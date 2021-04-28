@@ -21,7 +21,7 @@ MovieList.propTypes = {
     imagePath: PropTypes.string,
   })),
 };
-  
+
 MovieList.defaultProps = {
   movies: [],
 };
