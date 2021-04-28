@@ -5,7 +5,7 @@ class Header extends React.Component {
   render() {
     return (
       <header classeName='movieCardHeader'>
-      <h1 className='titulo'>Movies Cards</h1>
+        <h1 className='titulo'>Movies Cards</h1>
       </header>
     );
   }
