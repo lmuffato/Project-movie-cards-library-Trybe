@@ -1,9 +1,13 @@
 import React from 'react';
 
-function MovieList() {
+import MovieCard from './MovieCard'
+
+function MovieList(props) {
+  const movies = props.movies
+
   return (
     <div>
-      oi
+      {movies.map(movie => <MovieCard key={movie.title}/>)}
     </div>
   )
 };
