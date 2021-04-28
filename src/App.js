@@ -6,47 +6,36 @@ import MovieList from './components/MovieList';
 function App() {
   const movies = [
     {
-      title: 'Piratas do Caribe',
-      subtitle: 'O Prisioneiro de Azcabam',
+      title: 'Peaky Blinders',
+      subtitle: 'John',
       storyline: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                   Maxime accusantium ab earum! 
                   Natus, quibusdam, voluptates quaerat molestias 
                   velit cupiditate nemo neque 
                   placeat aspernatur exercitationem`,
-      imagePath: 'https://images.unsplash.com/photo-1611125967908-0d14a7889ff5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      imagePath: 'https://images.unsplash.com/photo-1542457953430-c046813ffa86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       rating: 10,
     },
     {
-      title: 'O Senhor dos Anéis',
-      subtitle: 'As Duas Torres',
+      title: 'Mr Robot',
+      subtitle: 'Elliot',
       storyline: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                   Maxime accusantium ab earum! 
                   Natus, quibusdam, voluptates quaerat molestias 
                   velit cupiditate nemo neque 
                   placeat aspernatur exercitationem`,
-      imagePath: 'https://images.unsplash.com/photo-1506466010722-395aa2bef877?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1488&q=80',
+      imagePath: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       rating: 10,
     },
     {
-      title: 'Piratas do Caribe',
-      subtitle: 'O Prisioneiro de Azcabam',
+      title: 'O Gambito da Rainha',
+      subtitle: 'Elizabeth',
       storyline: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                   Maxime accusantium ab earum! 
                   Natus, quibusdam, voluptates quaerat molestias 
                   velit cupiditate nemo neque 
                   placeat aspernatur exercitationem`,
-      imagePath: 'https://images.unsplash.com/photo-1611125967908-0d14a7889ff5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      rating: 10,
-    },
-    {
-      title: 'O Senhor dos Anéis',
-      subtitle: 'As Duas Torres',
-      storyline: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                  Maxime accusantium ab earum! 
-                  Natus, quibusdam, voluptates quaerat molestias 
-                  velit cupiditate nemo neque 
-                  placeat aspernatur exercitationem`,
-      imagePath: 'https://images.unsplash.com/photo-1506466010722-395aa2bef877?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1488&q=80',
+      imagePath: 'https://images.unsplash.com/photo-1604948501466-4e9c339b9c24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       rating: 10,
     },
     {
