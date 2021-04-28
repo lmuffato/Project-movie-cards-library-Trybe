@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 
 function MovieList(props) {
   const { movies } = props;
-  console.log(movies);
+  // console.log(movies);
 
   return (
     <section>
