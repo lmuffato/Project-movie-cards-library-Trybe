@@ -17,7 +17,7 @@
     "test:watch": "jest --watch",
     "eject": "react-scripts eject",
     "lint:styles": "npx stylelint '**/*.css'",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx"
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
   },
   "eslintConfig": {
     "extends": "react-app"
