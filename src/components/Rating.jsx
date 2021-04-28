@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 function Rating(props) {
   const { rating } = props;
   return (
-    <div>
-      <span>{rating}</span>
+    <div className="movie-card-rating ">
+      <span className="rating">{rating}</span>
     </div>
   );
 }

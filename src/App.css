@@ -1,7 +1,8 @@
-body {
-  background-color: whitesmoke;
+.App {
+  background-color: rgb(199, 199, 199);
   box-sizing: border-box;
   font-size: 16px;
+  height: 100vh;
 }
 
 .movie-card-header {
@@ -23,6 +24,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   padding: 48px 30px;
+  justify-content: center;
 }
 
 .movie-card {
@@ -35,8 +37,13 @@ body {
   margin: 5px;
   overflow: hidden;
   width: 300px;
+  transition: 0.4s;
 }
 
+.movie-card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 15px black;
+}
 
 .movie-card-image {
   width: 100%;
