@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 
 const MovieList = ({ movies }) => (
   <section>
-    {movies.map((movie) => <MovieCard key={ movie.title } movieData={ movie } />)}
+    {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
   </section>
 );
 

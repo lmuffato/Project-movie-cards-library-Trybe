@@ -2,17 +2,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MovieCard = ({ movieData }) => (
+const MovieCard = ({ movie }) => (
   <div>
     <p>
-      {movieData.title}
+      {movie.title}
+    </p>
+    <p>
+      {movie.subtitle}
+    </p>
+    <p>
+      {movie.storyline}
+    </p>
+    <p>
+      {movie.imagePath}
+    </p>
+    <p>
+      {movie.rating}
     </p>
   </div>
 );
 
 MovieCard.propTypes = {
-  movieData: PropTypes.shape({
+  movie: PropTypes.shape({
     title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
   }).isRequired,
 };
 
