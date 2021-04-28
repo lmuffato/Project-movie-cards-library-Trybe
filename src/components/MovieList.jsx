@@ -10,7 +10,7 @@ function MovieList(props) {
   return (
     <div>
       {movies
-        .map((e, i) => <MovieCard key={ key + (i + 1) } movies={ e } />)};
+        .map((e, i) => <MovieCard key={ key + (i + 1) } movies={ e } />)}
     </div>
   );
 }
