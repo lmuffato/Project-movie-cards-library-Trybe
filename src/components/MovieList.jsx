@@ -4,18 +4,23 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    const { list } = this.props;
+    const { movies } = this.props;
     return (
       <div className="container">
-        {list.map((movie, index) => <MovieCard key={ index } movie={ movie } />)}
+        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </div>
     );
   }
 }
 
 MovieList.propTypes = {
-  list: PropTypes.arrayOf(PropTypes.object),
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  })).isRequired,
 };
-MovieList.defaultProps = {
-  list: [],
-};
+
+export default MovieList;
