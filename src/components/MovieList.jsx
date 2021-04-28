@@ -1,10 +1,10 @@
 import React from 'react';
-import MovieCard from './MovieCard'
+import MovieCard from './MovieCard';
 
 function MovieList() {
   return (
     <div>
-        <MovieCard />
+      <MovieCard />
     </div>
   );
 }
