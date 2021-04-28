@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 const MovieCard = ({ movie }) => (
   <div>
-    <p>
+    <h4>
       {movie.title}
-    </p>
+    </h4>
     <p>
       {movie.subtitle}
     </p>
