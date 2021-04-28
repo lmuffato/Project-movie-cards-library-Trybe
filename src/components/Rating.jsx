@@ -15,6 +15,6 @@ class Rating extends Component {
 
 Rating.propTypes = {
   rating: PropTypes.string.isRequired,
-}
+};
 
 export default Rating;
