@@ -28,8 +28,4 @@ MovieCard.propTypes = {
   }).isRequired,
 };
 
-Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
-};
-
 export default MovieCard;
