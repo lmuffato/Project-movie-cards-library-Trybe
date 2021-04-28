@@ -4,20 +4,26 @@ import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    const { movies, title } = this.props;
+    const { movies } = this.props;
     return (
       <div>
-        {movies.map((movie) => (
-          <MovieCard movie={ movie } key={ title } />
+        {movies.map((movie, index) => (
+          <MovieCard movie={ movie } key={ movies[index].title } />
         ))}
       </div>
     );
   }
 }
 
+// referencia sobre proptypes array https://stackoverflow.com/questions/32325912/react-proptype-array-with-shape
 MovieList.propTypes = {
-  movies: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  })).isRequired,
 };
 
 export default MovieList;

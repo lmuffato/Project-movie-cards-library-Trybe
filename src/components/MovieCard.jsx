@@ -18,14 +18,7 @@ class MovieCard extends React.Component {
   }
 }
 
-// referencia sobre proptypes array https://stackoverflow.com/questions/32325912/react-proptype-array-with-shape
 MovieCard.propTypes = {
-  movie: PropTypes.arrayOf(PropTypes.shape({
-    imagePath: PropTypes.string,
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-  })).isRequired,
+  movie: PropTypes.string.isRequired,
 };
 export default MovieCard;
