@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import '../styles/bulma/css/bulma.min.css';
 
 class Header extends Component {
   render() {
     return (
-      <header>
-        <h1>Movie Cards Library</h1>
+      <header className="hero is-halfheight is-link">
+        <div className="hero-body">
+          <h1 className="title">Movie Cards Library</h1>
+        </div>
       </header>);
   }
 }

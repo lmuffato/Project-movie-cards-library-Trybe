@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
+import '../styles/bulma/css/bulma.min.css';
 
 class MovieCard extends Component {
   render() {
     const { movie } = this.props;
     const { title, subtitle, storyline, imagePath, rating } = movie;
     return (
-      <div>
-        <h4>{ title }</h4>
-        <img src={ imagePath } alt="imagem do filme" />
-        <h5>{ subtitle }</h5>
-        <p>{ storyline }</p>
+      <div className="box">
+        <h4 className="title ">{ title }</h4>
+        <h5 className="subtitle">{ subtitle }</h5>
+        <div className="columns">
+          <div className="column">
+            <img className="image" src={ imagePath } alt="imagem do filme" />
+          </div>
+          <div className="content column">
+            <p>{ storyline }</p>
+          </div>
+        </div>
         <Rating rating={ rating } />
       </div>
     );

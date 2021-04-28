@@ -3,10 +3,11 @@ import './App.css';
 import movies from './data';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
+import './styles/bulma/css/bulma.min.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App box has-background-grey-light">
       <Header />
       <MovieList movies={ movies } />
     </div>
