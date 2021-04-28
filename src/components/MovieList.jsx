@@ -13,8 +13,8 @@ function MovieList(props) {
   );
 }
 
-MovieCard.propTypes = {
-  movies: PropTypes.string.isRequired,
-};
+// MovieCard.propTypes = {
+//   movies: PropTypes.string.isRequired,
+// };
 
 export default MovieList;
