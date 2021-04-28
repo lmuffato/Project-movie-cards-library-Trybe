@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+header {
+  color: aliceblue;
+  background-color: rgb(73, 69, 69);
+}
+
+.MovieList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 auto;
+  min-width: 25%;
+  margin: 10px 10px;
+
+}
+
+.MovieCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  padding: 10px;
+  margin: 10px 10px;
+  border: 1px gray solid;
+  border-radius: 10px;
+}
