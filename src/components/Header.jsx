@@ -1,9 +1,13 @@
 // implement Header component here
-import React from 'react';
+import React from "react";
 
 class Header extends React.Component {
   render() {
-    return <img src={this.props.source} alt={this.props.alternativeText} />;
+    return (
+      <header>
+        <h1>Movie Cards Library</h1>
+      </header>
+    );
   }
 }
 export default Header;
