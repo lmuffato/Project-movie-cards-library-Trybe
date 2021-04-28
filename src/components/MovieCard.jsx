@@ -9,6 +9,9 @@ function MovieCard({ movie }) {
     // <li>{ movie }</li>
     <div>
       <img src={ imagePath } alt="Imagem Filme" />
+      <h4>{title}</h4>
+      <h5>{subtitle}</h5>
+      <p>{storyline}</p>
     </div>
   );
 }
