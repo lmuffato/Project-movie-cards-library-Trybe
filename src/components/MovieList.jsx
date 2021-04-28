@@ -5,12 +5,10 @@ import MovieCard from './MovieCard';
 
 function MovieList(props) {
   const { movies } = props;
-  console.log(movies);
-  const key = 'Movie Title';
   return (
     <div>
       {movies
-        .map((e, i) => <MovieCard key={ key + (i + 1) } movies={ e } />)}
+        .map((e, i) => <MovieCard key={ `Movie Title ${i + 1}` } movie={ e } />)}
     </div>
   );
 }

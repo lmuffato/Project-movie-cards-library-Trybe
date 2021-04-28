@@ -4,36 +4,36 @@ import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 function MovieCard(props) {
-  const { movies } = props;
-  const { title, subtitle, storyline, imagePath, rating } = movies;
+  const { movie } = props;
+  const { imagePath, rating, storyline, subtitle, title } = movie;
   return (
     <section>
       <h4>{title}</h4>
       <h5>{subtitle}</h5>
       <p>{storyline}</p>
       <img src={ imagePath } alt="Capa do filme" />
-      <Rating nota={ rating } />
+      <Rating rating={ rating } />
     </section>
   );
 }
 
 MovieCard.propTypes = {
-  movies: {
+  movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
     imagePath: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
-  },
+  }),
 };
 
 MovieCard.defaultProps = {
-  movies: {
-    title: 'Era do Gelo',
-    subtitle: 'Era do Gelo',
-    storyline: 'Era da extinção',
-    imagePath: 'https://almeidajunior-prod1.s3.amazonaws.com/prod/uploads/news/5c897bf7868b8.jpg',
-    rating: 4.9,
+  movie: {
+    title: 'Era do gelo',
+    subtitle: 'Era do gelo 2',
+    storyline: 'Era do gelo 3',
+    imagePath: 'Era do gelo 4',
+    rating: 5,
   },
 };
 
