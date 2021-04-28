@@ -1,12 +1,12 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 
-function MovieList( {movies} ) {
+function MovieList({ movies }) {
   return (
     <div>
-     {movies.map((movie) => {
-         return <MovieCard key={movie.title} />
-     })}
+      {movies.map((movie) => {
+        return <MovieCard key={ movie.title } />;
+        })}
     </div>
   );
 }
