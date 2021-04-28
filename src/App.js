@@ -5,12 +5,11 @@ import movies from './data'
 function App() {
   return (
     <div className="App">
-      <App />
       <Header />
+      <MovieList movies={ movies } />
+      <App />
     </div>
   );
 }
-
-
 
 export default App;
