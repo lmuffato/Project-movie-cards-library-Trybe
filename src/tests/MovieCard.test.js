@@ -46,7 +46,7 @@ describe('7 - Renderize a imagem do filme dentro de uma tag `img`', () => {
 describe('8 - Renderize o título do filme dentro de uma tag `h4`', () => {
   let wrapper;
   const movie = movies[0];
-  it.skip('Renderize o título do filme dentro de uma tag `h4`', () => {
+  it('Renderize o título do filme dentro de uma tag `h4`', () => {
     wrapper = shallow(<MovieCard movie={ movie } />);
     expect(wrapper.find('h4').text()).toBe('Movie Title 1');
   });
@@ -55,7 +55,7 @@ describe('8 - Renderize o título do filme dentro de uma tag `h4`', () => {
 describe('9 - Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
   let wrapper;
   const movie = movies[0];
-  it.skip('Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
+  it('Renderize o subtítulo do filme dentro de uma tag `h5`', () => {
     wrapper = shallow(<MovieCard movie={ movie } />);
     expect(wrapper.find('h5').text()).toBe('Movie Subtitle 1');
   });
