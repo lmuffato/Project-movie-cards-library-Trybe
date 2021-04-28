@@ -2,9 +2,7 @@ import React from 'react';
 
 function MovieList({ movies }) {
   return (
-    <header>
-      <h1>Movie Cards Library</h1>
-    </header>
+    <header> </header>
   );
 }
-export default MoveList;
+export default MovieList;
