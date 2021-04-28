@@ -3,7 +3,13 @@ import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    return (<MovieCard />);
+    return (
+      <div>
+        {this.props.movies.map((movie) => (
+          <MovieCard movie={movie}/>
+        ))}
+      </div>
+    );
   }
 }
 
