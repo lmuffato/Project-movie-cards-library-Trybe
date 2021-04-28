@@ -3,10 +3,16 @@ import React from 'react';
 
 function MovieCard(props) {
 
-  const { title, subtitle, storyline, imagePath, rating } = props.key;
+  const { title, subtitle, storyline, imagePath, rating } = props.movies;
 
   return (
-    <h1>Ola jovem</h1>
+    <section>
+      <p>{title}</p>
+      <p>{subtitle}</p>
+      <p>{storyline}</p>
+      <img src={imagePath} alt='Capa do filme'/>
+      <p>{rating}</p>
+    </section>
   )
 }
 

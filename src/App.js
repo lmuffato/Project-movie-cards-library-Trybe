@@ -5,9 +5,7 @@ import MovieList from './components/MovieList';
 
 function App() {
 
-  const arrayObj = {
-
-  };
+  const arrayObj = {};
 
   return (
     <div className="App">
