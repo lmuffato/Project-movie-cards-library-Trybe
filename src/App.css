@@ -28,7 +28,7 @@ body {
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   height: 450px;
@@ -47,13 +47,13 @@ body {
   padding: 20px;
 }
 
-.movie-card-title {
+.h4 {
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
 }
 
-.movie-card-subtitle {
+.h5 {
   color: #6c757d;
   font-size: 16px;
   font-weight: 500;
