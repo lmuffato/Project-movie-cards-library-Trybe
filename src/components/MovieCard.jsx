@@ -1,5 +1,5 @@
 import React from 'react';
-import Protypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
@@ -9,8 +9,8 @@ class MovieCard extends React.Component {
     return (
       <div>
         <div>
-          <h1>{title}</h1>
-          <h1>{subtitle}</h1>
+          <h4>{title}</h4>
+          <h5>{subtitle}</h5>
           <p>{storyline}</p>
         </div>
         <img src={ imagePath } alt={ title } />
@@ -20,8 +20,8 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  movie: Protypes.arrayOf(Protypes.shape({
-    title: Protypes.string.isRequired,
+  movie: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
