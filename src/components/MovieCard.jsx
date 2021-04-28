@@ -1,16 +1,16 @@
 import React from 'react';
+import Rating from './Rating';
 
 function MovieCard(props) {
-  console.log(props);
   const { title, subtitle, storyline, imagePath, rating } = props;
-  console.log(title);
   return (
-    <div key={ title }>
-      <img src={ imagePath } alt={ `${title}` } />
+    <section key={ title } className="movie-card">
+      <img src={ imagePath } alt={ `${title}` } className="movie-card-image" />
       <h4>{ title }</h4>
       <h5>{ subtitle }</h5>
       <p>{ storyline }</p>
-    </div>
+      <Rating rating={ rating } />
+    </section>
   );
 }
 
