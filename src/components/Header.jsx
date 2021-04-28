@@ -1,2 +1,11 @@
 // implement Header component here
-// Iniciando o projeto
+
+function Header() {
+    return (
+        <header>
+            Hello World
+        </header>
+    )
+}
+
+export default Header;
