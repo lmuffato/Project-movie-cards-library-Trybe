@@ -27,9 +27,13 @@ function MovieList() {
     },
   ];
 
+  // console.log(movies);
+
   return (
     <main>
-      {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
+      <ul>
+        {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
+      </ul>
     </main>
   );
 }

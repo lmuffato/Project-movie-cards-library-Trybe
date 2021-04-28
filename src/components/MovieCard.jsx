@@ -2,9 +2,12 @@
 import React from 'react';
 
 function MovieCard(movie) {
-  const { title } = movie;
+  // const { title, subtitle, storyline, imagePath, rating } = movie;
+  // console.log(subtitle, storyline, imagePath, rating);
+  console.log(movie.title);
   return (
-    <h1>{ title }</h1>
+    // <li>{ movie }</li>
+    <div>Olá</div>
   );
 }
 
