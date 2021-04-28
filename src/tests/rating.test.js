@@ -43,7 +43,7 @@ describe.skip('12 - Renderize a nota de um filme dentro de `Rating`', () => {
   });
 });
 
-describe.skip('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
+describe('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
   let wrapper;
   const movie = movies[0];
   it('Renderize o componente `<Rating />` dentro de `<MovieCard />`', () => {
@@ -52,7 +52,7 @@ describe.skip('13 - Renderize o componente `<Rating />` dentro de `<MovieCard />
   });
 });
 
-describe.skip('14 - Passe como prop para o componente `<Rating/>` o atributo `rating`', () => {
+describe('14 - Passe como prop para o componente `<Rating/>` o atributo `rating`', () => {
   let wrapper;
   const movie = movies[0];
   it('Passe como prop para o componente `<Rating />` o atributo `rating`', () => {
