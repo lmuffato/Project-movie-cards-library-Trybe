@@ -1,23 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Rating from './Rating';
 
-export default function MovieCard(props) {
-  const { title, subtitle } = props;
-
+export default function MovieCard(prop) {
+  const { title, subtitle, storyline, rating, imagePath } = prop;
   return (
-    <>
+    <div>
       <h4>{ title }</h4>
       <h5>{ subtitle }</h5>
-    </>
+      <p>{ storyline }</p>
+      <Rating rating={ rating } />
+      <img src={ imagePath } alt="" />
+    </div>
   );
 }
-
-MovieCard.defaultProps = {
-  title: 'Título do filme',
-  subtitle: 'Subtítulo do filme',
-};
-
-MovieCard.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-};
