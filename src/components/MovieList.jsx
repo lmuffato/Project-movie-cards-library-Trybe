@@ -1,12 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-function Movielist(props) {
+function Movielist({ movies }) {
   return (
     <section>
-      { props.movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
+      { movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
     </section>
   );
 }
+
+Movielist.propTypes = {
+  movies: PropTypes.string.isRequired,
+};
 
 export default Movielist;

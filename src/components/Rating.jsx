@@ -1,11 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Rating(props) {
+function Rating({ rating }) {
   return (
     <section className="rating">
-      { props.rating }
+      { rating }
     </section>
   );
 }
+
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
 
 export default Rating;
