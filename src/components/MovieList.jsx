@@ -1,8 +1,9 @@
 // implement MovieList component here
 import React from 'react';
+import MovieCard from 'MovieCard';
 
 function MovieList() {
-  return (<h1> ola </h1>);
+  return (<MovieCard />);
 }
 
 export default MovieList;
