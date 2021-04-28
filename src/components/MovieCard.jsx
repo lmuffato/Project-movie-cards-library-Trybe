@@ -2,11 +2,12 @@ import React from 'react';
 
 function MovieCard(props) {
   console.log(props);
-  console.log(props.title);
+  const { title, subtitle } = props;
+  console.log(title);
   return (
-    <div key={props.title}>
-      <p>{props.title}</p>
-      <p>{props.subtitle}</p>
+    <div key={ title }>
+      <p>{ title }</p>
+      <p>{ subtitle }</p>
     </div>
   );
 }
