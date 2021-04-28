@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
 import Header from './components/Header';
+import './App.css';
+import MovieList from './components/MovieList';
+import movies from './data';
 
 function App() {
   return (
-    <section className="App">
+    <div className="App">
       <Header />
-    </section>
+      {/* requisito 3 */}
+      <MovieList movies={ movies } />
+    </div>
   );
 }
 
