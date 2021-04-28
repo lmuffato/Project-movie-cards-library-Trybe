@@ -1,9 +1,9 @@
 // implement Rating component here
 import React from 'react';
 
-function Rating() {
+function Rating(props) {
   return (
-    <p>Avaliação</p>
+    <p className='rating'>{props.nota}</p>
   )
 }
 

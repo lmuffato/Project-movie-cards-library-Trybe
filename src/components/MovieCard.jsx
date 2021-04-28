@@ -1,5 +1,6 @@
 // implement MovieCard component here
 import React from 'react';
+import Rating from './Rating'
 
 function MovieCard(props) {
 
@@ -11,7 +12,7 @@ function MovieCard(props) {
       <h5>{subtitle}</h5>
       <p>{storyline}</p>
       <img src={imagePath} alt='Capa do filme'/>
-      <p>{rating}</p>
+      <Rating nota={rating}/>
     </section>
   )
 }
