@@ -37,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 450px;
+  justify-content: space-between;
   margin: 5px;
   overflow: hidden;
   width: 300px;
@@ -77,6 +78,7 @@ body {
   color: white;
   font-size: 16px;
   font-weight: 700;
+  margin: 0;
   padding: 3px 9px;
 }
 
