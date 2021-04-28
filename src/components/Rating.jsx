@@ -11,5 +11,10 @@ function Rating(props) {
 export default Rating;
 
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
+};
+// Mudanca feita pois o npm rum alegava erro, https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html
+// site em que aprendi a utilizar o defaultProps
+Rating.defaultProps = {
+  rating: undefined,
 };

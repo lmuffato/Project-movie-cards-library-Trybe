@@ -3,8 +3,8 @@ import React from 'react';
 import Rating from './Rating';
 
 function MovieCard(props) {
-  const { movie } = props;
-  const { title, subtitle, storyline, imagePath, rating } = movie;
+// destruction de objeto dentro de objeto aprendido no plantao 28/04/2021 17:40 as 19:30
+  const { movie: { title, subtitle, storyline, imagePath, rating } } = props;
   return (
     <section className="movie-card">
       <img src={ imagePath } alt={ title } className="movie-card-image" />
