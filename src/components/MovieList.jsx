@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 function MovieList(props) {
@@ -8,5 +9,9 @@ function MovieList(props) {
     </>
   );
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.string.isRequired,
+};
 
 export default MovieList;
