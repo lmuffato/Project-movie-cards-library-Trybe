@@ -1,5 +1,6 @@
 // implement MovieList component here
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 function MovieList(props) {
@@ -13,8 +14,8 @@ function MovieList(props) {
   );
 }
 
-// MovieCard.propTypes = {
-//   movies: PropTypes.string.isRequired,
-// };
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default MovieList;
