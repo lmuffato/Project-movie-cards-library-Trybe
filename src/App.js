@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList movies={ movies } />
-      Hora de codar! 🚀✍️👨‍💻👩‍💻💪
+      <MovieList movies={ movies } className="movie-card-body" />
     </div>
   );
 }
