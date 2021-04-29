@@ -17,7 +17,11 @@ class Rating extends React.Component {
 // Checagem de props feita com base no estudo do material https://blog.logrocket.com/validating-react-component-props-with-prop-types-ef14b29963fc/
 
 Rating.propTypes = {
-  rating: PropTypes.number
+  rating: PropTypes.number,
 };
+
+Rating.defaultProps = {
+  rating: 5,
+}
 
 export default Rating;

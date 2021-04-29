@@ -22,9 +22,13 @@ class MovieCard extends React.Component {
 }
 
 // Checagem de props feita com base no estudo do material https://blog.logrocket.com/validating-react-component-props-with-prop-types-ef14b29963fc/
-MovieCard.propTypes = { 
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  storyline: PropTypes.string,
+MovieCard.propTypes = {
+  movie: PropTypes.objectOf({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
+  }),
 }
 export default MovieCard;
