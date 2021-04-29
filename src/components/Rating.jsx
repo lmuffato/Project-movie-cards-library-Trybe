@@ -7,7 +7,9 @@ function Rating(props) {
   const { rating } = props;
 
   return (
-    <div className="rating">{rating}</div>
+    <div className="movie-card-rating">
+      <span className="rating">{rating}</span>
+    </div>
   );
 }
 

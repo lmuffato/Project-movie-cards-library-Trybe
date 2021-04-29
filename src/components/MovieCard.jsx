@@ -10,18 +10,18 @@ function MovieCard(props) {
   const { title, subtitle, storyline, imagePath, rating } = movie;
 
   return (
-    <section>
+    <section className="movie-card">
       {/* Requisito 7 */}
-      <img src={ imagePath } alt={ title } />
+      <img src={ imagePath } alt={ title } className="movie-card-image" />
 
       {/* Requisito 8 */}
-      <h4>{ title }</h4>
+      <h4 className="movie-card-title">{ title }</h4>
 
       {/* Requisito 9 */}
-      <h5>{ subtitle }</h5>
+      <h5 className="movie-card-subtitle">{ subtitle }</h5>
 
       {/* Requisito 10 */}
-      <p>{ storyline }</p>
+      <p className="movied-card-storyline">{ storyline }</p>
 
       {/* Requisito 13 e 14 */}
       <Rating rating={ rating } />
