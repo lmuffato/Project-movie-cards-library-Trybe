@@ -9,8 +9,13 @@ function Rating({ rating }) {
   );
 }
 
+Rating.defaultProps = {
+  rating: 0,
+};
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
 };
 
 export default Rating;
+
+// requisito construido com a ajuda do colega Rafael Medeiros

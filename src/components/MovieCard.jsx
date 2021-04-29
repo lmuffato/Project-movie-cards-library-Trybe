@@ -7,7 +7,7 @@ function MovieCard(props) {
   const { title, subtitle, storyline, rating, imagePath } = movie;
 
   return (
-    <section className="movie-card-rating">
+    <section className="movie-card-rating movie-card">
       <img src={ imagePath } alt="foto do filme" className="movie-card-image" />
       <h4>{title}</h4>
       <h5>{subtitle}</h5>
@@ -29,3 +29,5 @@ MovieCard.propTypes = {
 };
 
 export default MovieCard;
+
+// requisito construido com a ajuda do colega Rafael Medeiros
