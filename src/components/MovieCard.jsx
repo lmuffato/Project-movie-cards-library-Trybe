@@ -22,12 +22,13 @@ class MovieCard extends React.Component {
 }
 
 // Checagem de props feita com base no estudo do material https://blog.logrocket.com/validating-react-component-props-with-prop-types-ef14b29963fc/
+//PropTypes.shape() - Utilizado para uma validação mais detalhada do objeto. 
 MovieCard.propTypes = {
-  movie: PropTypes.objectOf({
+  movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
-    imagePath: PropTypes.string,
+    imagePath: PropTypes.srting,
     rating: PropTypes.number,
   }),
 };
@@ -38,7 +39,7 @@ MovieCard.defaultpropTypes = {
     subtitle: 'subtitulo',
     storyline: 'sinopse',
     imagePath: 'link',
-    rating: 5,
+    rating: 10,
   },
 };
 
