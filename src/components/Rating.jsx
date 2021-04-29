@@ -1,10 +1,16 @@
 // implement Rating component here
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Rating() {
+function Rating(props) {
+  const { rating } = props;
   return (
-    <section> Rating </section>
+    <section className="rating">{rating}</section>
   );
 }
+
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
 
 export default Rating;
