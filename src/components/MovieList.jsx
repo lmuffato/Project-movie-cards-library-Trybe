@@ -1,10 +1,10 @@
 import React from 'react';
-import MovieCard from './components/MovieCard'
+import MovieCard from './MovieCard';
 
 function MovieList() {
   return (
     <section>
-        <MovieCard />
+      <MovieCard />
     </section>
   );
 }
