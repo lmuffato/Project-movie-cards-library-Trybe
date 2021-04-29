@@ -3,6 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
+// crio um card com cada objeto de filme que chaga pelo props
+
 function MovieCard(props) {
   const { movie } = props;
   console.log(movie);
