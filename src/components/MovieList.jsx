@@ -1,11 +1,9 @@
 import React from 'react';
 
-class MovieList extends React.Component {
-  render() {
-    return (
-      <section />
-    );
-  }
+function MovieList() {
+  return (
+    <section />
+  );
 }
 
 export default MovieList;
