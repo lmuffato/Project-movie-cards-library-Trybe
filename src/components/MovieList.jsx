@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../App.css';
 import MovieCard from './MovieCard';
 
-function MovieList(prop) {
-  const { movies } = prop;
+function MovieList(props) {
+  const { movies } = props;
   return (
     <main className="movie-list">
       { movies.map((movie, index) => (
@@ -11,5 +12,9 @@ function MovieList(prop) {
     </main>
   );
 }
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default MovieList;
