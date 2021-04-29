@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 function MovieCard(prop) {
@@ -15,5 +16,17 @@ function MovieCard(prop) {
     </div>
   );
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape(
+    {
+      title: PropTypes.string.isRequired,
+      subtitle: PropTypes.string.isRequired,
+      storyline: PropTypes.string.isRequired,
+      rating: PropTypes.number,
+      imagePath: PropTypes.string.isRequired,
+    },
+  ).isRequired,
+};
 
 export default MovieCard;
