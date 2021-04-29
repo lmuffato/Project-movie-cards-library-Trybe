@@ -7,25 +7,41 @@
   margin: 10px 10px;
   border: 1px gray solid;
   border-radius: 10px;
-  align-items: flex-end;
+  justify-content: space-between;
+  /* align-items: flex-end; */
   /* justify-content: flex-end; */
   /* padding: 8px; */
 }
 
 .c-MovieCard__title, .c-MovieCard__subtitle, .c-MovieCard__storyline {
-  align-self: flex-start;
-  justify-self: flex-start;
+  /* align-self: flex-start; */
+  /* justify-self: flex-start; */
   padding: 0 15px;
   margin-bottom: 5px;
   margin-top: 8px;
 }
 
+.c-MovieCard__storyline {
+  /* margin-bottom: 20px; */
+}
+
 .movieCard__image {
-  justify-self: flex-start;
+  /* justify-self: flex-start; */
 }
 
 .c-MovieCard__rating {
-  padding: 8px;
-  justify-self: flex-end;
+  /* padding: 8px; */
+  /* justify-self: flex-end; */
   /* color: white; */
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.rating {
+  padding: 8px;
+  /* max-width: 100px; */
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; */
 }
