@@ -4,7 +4,7 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <Header title="Oieee, eu sou um Título :D" />
+    <Header title="Movie Cards Library" />
     // <div className="App"></div>
   );
 }

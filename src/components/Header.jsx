@@ -1,8 +1,8 @@
 // implement Header component here
 import React from 'react';
 
-function Header(prop) {
-  const { title } = prop;
+function Header() {
+  const title = 'Movie Cards Library';
   return (
     <header>
       <h1>{title}</h1>
