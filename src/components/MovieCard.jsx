@@ -25,10 +25,10 @@ class MovieCard extends React.Component {
 // PropTypes.shape() - Utilizado para uma validação mais detalhada do objeto.
 MovieCard.propTypes = {
   movie: PropTypes.shape({
+    imagePath: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
-    imagePath: PropTypes.srting,
     rating: PropTypes.number,
   }),
 };
