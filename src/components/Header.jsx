@@ -1,8 +1,13 @@
 // implement Header component here
 import React from 'react';
 
-function Header() {
-  return <h1>Meu Header Cabuloso</h1>;
+function Header(prop) {
+  const { title } = prop;
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  );
 }
 
 export default Header;
