@@ -25,16 +25,16 @@ class MovieCard extends React.Component {
 // PropTypes.shape() - Utilizado para uma validação mais detalhada do objeto.
 MovieCard.propTypes = {
   movie: PropTypes.shape({
-    imagePath: PropTypes.string,
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-  }),
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+  }).isRequired,
 };
 // Utilizamos a defaultpropTypes para definir de forma estática uma props com valor default. src =https://blog.logrocket.com/a-complete-guide-to-default-props-in-react-984ea8e6972d/#:~:text=For%20a%20React%20component%20created,default%20props%20for%20the%20component.
-// MovieCard.defaultpropTypes = {
-//   movie: PropTypes.object,
-// };
+MovieCard.defaultpropTypes = {
+  movie: PropTypes.object,
+};
 
 export default MovieCard;
