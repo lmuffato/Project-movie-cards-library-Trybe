@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function MovieCard(props) {
-  const { movieInfo: { imagePath, title, subtitle, storyline, rating } } = props;
+  const { movie: { imagePath, title, subtitle, storyline, rating } } = props;
 
   return (
     <body className="movie-card-body">
@@ -18,7 +18,7 @@ function MovieCard(props) {
 }
 
 MovieCard.propTypes = {
-  movieInfo: PropTypes.shape({
+  movie: PropTypes.shape({
     imagePath: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
