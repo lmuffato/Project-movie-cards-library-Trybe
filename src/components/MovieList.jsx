@@ -1,12 +1,10 @@
 import React from 'react';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    return (
-      <section>
-        <p>Hi!</p>
-      </section>
-    );
+    const { movies } = this.props;
+    return (movies.map((movie) => <MovieCard key={ movie } movies={ movie } />));
   }
 }
 
