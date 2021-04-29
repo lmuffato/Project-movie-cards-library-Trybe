@@ -1,0 +1,31 @@
+.c-MovieCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  flex: 1 1 auto;
+  flex-basis: 200px;
+  margin: 10px 10px;
+  border: 1px gray solid;
+  border-radius: 10px;
+  align-items: flex-end;
+  /* justify-content: flex-end; */
+  /* padding: 8px; */
+}
+
+.c-MovieCard__title, .c-MovieCard__subtitle, .c-MovieCard__storyline {
+  align-self: flex-start;
+  justify-self: flex-start;
+  padding: 0 15px;
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+
+.movieCard__image {
+  justify-self: flex-start;
+}
+
+.c-MovieCard__rating {
+  padding: 8px;
+  justify-self: flex-end;
+  /* color: white; */
+}
