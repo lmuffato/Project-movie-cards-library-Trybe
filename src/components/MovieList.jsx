@@ -11,7 +11,7 @@ class MovieList extends Component {
     );
     // console.log(this.props.movies);
     return (
-      <section>
+      <section className="movie-list">
         {movieCard}
       </section>
     );

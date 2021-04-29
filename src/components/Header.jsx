@@ -7,6 +7,10 @@ class Header extends Component {
     return (
       <header className="movie-card-header">
         <h1>Movie Cards Library</h1>
+        <div>
+          <h2>Ordem de lançamento dos filmes da</h2>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" alt="marvel" />
+        </div>
       </header>
     );
   }
