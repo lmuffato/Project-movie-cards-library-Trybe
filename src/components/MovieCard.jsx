@@ -1,5 +1,4 @@
 import React from 'react';
-import movie from '../data.js';
 
 class MovieCard extends React.Component {
   render() {
@@ -8,7 +7,7 @@ class MovieCard extends React.Component {
 
     return (
       <div className="movie-card">
-        {movie}
+        <img className="movie-img" src={imagePath} alt="Movie Image"/>
       </div>
     );
   }
