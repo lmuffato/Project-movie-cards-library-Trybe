@@ -1,5 +1,5 @@
 // implement MovieCard component here
-
+import propTypes from 'prop-types';
 import React from 'react';
 
 class MovieCard extends React.Component {
@@ -9,13 +9,19 @@ class MovieCard extends React.Component {
     return (
       <section>
         <li>
-          {title}
+          <h4>
+            {title}
+          </h4>
         </li>
         <li>
-          {subtitle}
+          <h5>
+            {subtitle}
+          </h5>
         </li>
         <li>
-          {storyline}
+          <p>
+            {storyline}
+          </p>
         </li>
         <li>
           {rating}
@@ -27,3 +33,13 @@ class MovieCard extends React.Component {
 }
 
 export default MovieCard;
+
+MovieCard.propTypes = {
+  movie: propTypes.shape({
+    title: propTypes.string,
+    subtitle: propTypes.string,
+    storyline: propTypes.string,
+    rating: propTypes.number,
+    imagePath: propTypes.string,
+  }).isRequired,
+};
