@@ -2,9 +2,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Rating = ({ rating }) => (<div className="rating">{ rating }</div>);
+const Rating = ({ rating }) => (
+  <div className="rating">
+    <span>{rating}</span>
+  </div>
+);
 
-Rating.prototype = {
+Rating.propTypes = {
   rating: PropTypes.number.isRequired,
 };
 
