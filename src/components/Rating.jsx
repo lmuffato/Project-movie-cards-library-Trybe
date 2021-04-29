@@ -8,5 +8,9 @@ export default function Rating({ rating }) {
 }
 
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
+};
+
+Rating.defaultProps = {
+  rating: 0,
 };
