@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/bulma/css/bulma.min.css';
+import '../../node_modules/bulma/css/bulma.min.css';
 
 class Header extends Component {
   render() {

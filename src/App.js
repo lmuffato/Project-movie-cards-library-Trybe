@@ -3,7 +3,7 @@ import './App.css';
 import movies from './data';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-import './styles/bulma/css/bulma.min.css';
+import '../node_modules/bulma/css/bulma.min.css';
 
 function App() {
   return (

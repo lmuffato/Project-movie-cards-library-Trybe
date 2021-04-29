@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
-import '../styles/bulma/css/bulma.min.css';
+import '../../node_modules/bulma/css/bulma.min.css';
 
 class MovieList extends Component {
   render() {
