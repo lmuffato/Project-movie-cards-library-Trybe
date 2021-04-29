@@ -7,7 +7,7 @@ function MovieCard(props) {
   const { title, subtitle, storyline, rating, imagePath } = movie;
 
   return (
-    <section>
+    <section className="movie-card-rating">
       <img src={ imagePath } alt="foto do filme" className="movie-card-image" />
       <h4>{title}</h4>
       <h5>{subtitle}</h5>
