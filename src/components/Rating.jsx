@@ -1,9 +1,11 @@
 // implement Rating component here
 import React from 'react';
+import PropTypes from 'prop-types';
+// O componente Rating irá renderizar dentro do MovieCard as notas(ratings) dos filmes, obtidos através do data.js;
 
 class Rating extends React.Component {
   render() {
-    const { rating } = this.props;
+    const { rating } = this.props; // Como o componente foi criado com class utilizamos props conforme orientado no conteúdo do course e na aula ao vivo.
     return (
       <p className="rating">
         {rating}
@@ -11,5 +13,11 @@ class Rating extends React.Component {
     );
   }
 }
+
+// Checagem de props feita com base no estudo do material https://blog.logrocket.com/validating-react-component-props-with-prop-types-ef14b29963fc/
+
+Rating.propTypes = {
+  rating: PropTypes.number
+};
 
 export default Rating;

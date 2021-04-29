@@ -1,23 +1,30 @@
 // implement MovieCard component here
 import React from 'react';
+import PropTypes from 'prop-types';
 import Rating from './Rating';
 // O componente MovieCard renderiza todas as informações dos filmes obtidas da prop movie.
 
 class MovieCard extends React.Component {
   render() {
-    const { movie } = this.props; // Como o componente foi criado com class utilizamos props conforme orientado no conteúdo do course e na aula ao vivo.
-    const { title, subtitle, imagePath, storyline, rating } = movie;
+    const { movie } = this.props; // Como o componente foi criado com class utilizamos this props conforme orientado no conteúdo do course e na aula ao vivo.
+    const { title, subtitle, imagePath, storyline, rating } = movie; // Desestruturando movie para facilitar a utilização no código.
     return (
       <div>
         <img src={ imagePath } alt={ `${title} Cover` } />
         <h4>{title}</h4>
         <h5>{subtitle}</h5>
         <p>{storyline}</p>
-        <Rating rating={rating} />
+        <Rating rating={ rating } />
       </div>
 
     );
   }
 }
 
+// Checagem de props feita com base no estudo do material https://blog.logrocket.com/validating-react-component-props-with-prop-types-ef14b29963fc/
+MovieCard.propTypes = { 
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  storyline: PropTypes.string,
+}
 export default MovieCard;
