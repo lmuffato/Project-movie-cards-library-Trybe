@@ -4,6 +4,10 @@ body {
   font-size: 16px;
 }
 
+li {
+  list-style: none;
+}
+
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
