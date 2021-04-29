@@ -1,2 +1,9 @@
-// implement Header component here
-// Iniciando o projeto 🚀
+ import React from 'react';
+
+export default function Header() {
+  return (
+    <header>
+      <h1>Movie Cards Library</h1>
+    </header>
+  );
+}
