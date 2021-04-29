@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-// import DataMovies from './data';
+import DataMovies from './data';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList />
+      <MovieList movies={ DataMovies } />
     </div>
   );
 }
