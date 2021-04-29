@@ -6,23 +6,22 @@ import MovieCard from './MovieCard';
 
 function MovieList(movieInfo) {
   const { movies } = movieInfo;
-
+  const map = movies.map((movie) => (<MovieCard key={ movie.title } movie={ movie } />));
   return (
     <section className="movie-list">
-
-      { movies.map((movie) => (<MovieCard key={ movie.title } movie={ movie } />))}
-
+      { map }
     </section>
   );
 }
+
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.shape({
+  movies: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
-  })).isRequired,
+  }).isRequired,
 };
 
 export default MovieList;
