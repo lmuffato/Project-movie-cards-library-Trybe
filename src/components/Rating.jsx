@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 function Rating(props) {
   const { rating } = props;
   return (
-    <section className="rating">{rating}</section>
+    <section className="movie-card-rating">
+      <div className="rating">{rating}</div>
+    </section>
   );
 }
 

@@ -8,13 +8,15 @@ function MovieCard(props) {
   console.log(movie);
 
   return (
-    <section>
-      <img src={ movie.imagePath } alt={ movie.title } />
-      <h4>{ movie.title }</h4>
-      <h5>{ movie.subtitle }</h5>
-      <p>{ movie.storyline }</p>
+    <div className="movie-card">
+      <img className="movie-card" src={ movie.imagePath } alt={ movie.title } />
+      <div className="movie-card-body">
+        <h4 className="movie-card-title">{ movie.title }</h4>
+        <h5 className="mmovie-card-subtitle">{ movie.subtitle }</h5>
+        <p className="movie-card-storyline">{ movie.storyline }</p>
+      </div>
       <Rating rating={ movie.rating } />
-    </section>
+    </div>
   );
 }
 

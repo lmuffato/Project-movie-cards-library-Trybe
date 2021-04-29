@@ -8,7 +8,7 @@ function MovieList(props) {
   // console.log(movies);
 
   return (
-    <section>
+    <section className="movie-list">
       { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
     </section>
   );
