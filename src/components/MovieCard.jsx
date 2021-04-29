@@ -32,8 +32,14 @@ MovieCard.propTypes = {
   }),
 };
 // Utilizamos a defaultpropTypes para definir de forma estática uma props com valor default. src =https://blog.logrocket.com/a-complete-guide-to-default-props-in-react-984ea8e6972d/#:~:text=For%20a%20React%20component%20created,default%20props%20for%20the%20component.
-MovieCard.defaultpropTypes = { 
-  movie: {},
+MovieCard.defaultpropTypes = {
+  movie: {
+    title: 'titulo',
+    subtitle: 'subtitulo',
+    storyline: 'sinopse',
+    imagePath: 'link',
+    rating: 5,
+  },
 };
 
 export default MovieCard;
