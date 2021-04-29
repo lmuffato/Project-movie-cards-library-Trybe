@@ -117,7 +117,7 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 
 4. Crie a pasta `components` dentro da pasta `src` e um arquivo `Header.jsx` dentro dessa pasta:
   * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-010-a-project-movie-cards-library**_
+    * Exemplo: `pwpwdd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-010-a-project-movie-cards-library**_
   * Crie a pasta `components` e o arquivo `Header.jsx`
     * Exemplo:
       * `mkdir src/components`
