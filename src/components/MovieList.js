@@ -13,7 +13,7 @@ function MovieList(movieInfo) {
     </section>
   );
 }
-
+// referência: Bruno, Gildeir, João me ajudaram a entende PropTypes.
 MovieList.propTypes = {
   movies: PropTypes.shape({
     title: PropTypes.string,
