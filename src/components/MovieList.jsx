@@ -1,26 +1,28 @@
 // implement MovieList component here
-import React from 'react'
-import MovieCard from './MovieCard'
-import proptypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 // import App from './src/App'
 
-function MovieList (movieInfo) {
-    const { movies } = movieInfo;
+function MovieList(movieInfo) {
+  const { movies } = movieInfo;
 
-    return (
-     <section className="movie-list"> { movies.map((movie) =>
-     ( <MovieCard key ={ movie.title } movie = { movie } /> ))} </section>
-    )
+  return (
+    <section className="movie-list">
+
+      { movies.map((movie) => (<MovieCard key={ movie.title } movie={ movie } />))}
+
+    </section>
+  );
 }
 MovieList.propTypes = {
-    movies: proptypes.arrayOf(proptypes.shape({
-        title: proptypes.string,
-        subtitle: proptypes.string,
-        storyline: proptypes.string,
-        rating: proptypes.number,
-        imagePath: proptypes.string,
-  }),
- ).isRequired,
-}
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  })).isRequired,
+};
 
-export default MovieList
+export default MovieList;
