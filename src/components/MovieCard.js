@@ -1,6 +1,7 @@
 // implement MovieCard component here
 import React from 'react';
 import Proptypes from 'prop-types';
+import Rating from './Rating';
 
 function MovieCard(props) {
   const { movie } = props;
@@ -10,6 +11,7 @@ function MovieCard(props) {
       <h5 className="movie-card-subtitle">{ movie.subtitle }</h5>
       <p className="movie-card-storyline">{ movie.storyline }</p>
       <img className="movie-card-image" src={ movie.imagePath } alt={ movie.title } />
+      <Rating rating={ movie.rating } />
     </section>
   );
 }
