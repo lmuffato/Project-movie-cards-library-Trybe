@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
-// import movies from '../data';
 
 export default function MovieList({ movies }) {
   return (
@@ -9,10 +8,6 @@ export default function MovieList({ movies }) {
       {movies.map((movie, index) => (
         <MovieCard
           movie={ movie }
-          title={ movie.title }
-          subtitle={ movie.subtitle }
-          storyline={ movie.storyline }
-          imagePath={ movie.imagePath }
           key={ `Movie Title ${index + 1}` }
         />))}
     </div>
