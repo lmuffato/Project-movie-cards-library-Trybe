@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
+import '../App.css';
 
 const MovieList = ({ movies }) => (
-  <section>
+  <section className="movie-list">
     {movies.map((movie) => (
       <MovieCard key={ movie.title } movie={ movie } />
     ))}

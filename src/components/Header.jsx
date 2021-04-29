@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../App.css';
 
 const Header = ({ title }) => (
-  <header>
-    <h1>{ title }</h1>
+  <header className="movie-card-header">
+    <h1 className="page-title">{ title }</h1>
   </header>
 );
 

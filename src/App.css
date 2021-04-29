@@ -31,12 +31,13 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  height: 450px;
+  height: 400px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
 }
 
+.movie-card:nth-child( 4 ), .movie-card:nth-child( 5 ) { height: 510px; }
 
 .movie-card-image {
   width: 100%;

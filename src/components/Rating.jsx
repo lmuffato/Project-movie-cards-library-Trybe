@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../App.css';
 
 const Rating = ({ rating }) => (
-  <span className="rating">{rating}</span>
+  <div className="movie-card-rating">
+    <span className="rating">{rating}</span>
+  </div>
 );
 
 Rating.propTypes = {
