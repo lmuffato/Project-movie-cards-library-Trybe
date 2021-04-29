@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import Header from '../components/Header';
 
 describe('1 - Crie um componente `<Header />`', () => {
+  // para pular o teste coloqquie it.skip
   it('Renderize o componente `<Header />`', () => {
     shallow(<Header />);
   });
