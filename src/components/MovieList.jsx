@@ -22,5 +22,9 @@ MovieList.propTypes = {
     PropTypes.object,
   ),
 };
+// Utilizamos a defaultpropTypes para definir de forma estática uma props com valor default. src =https://blog.logrocket.com/a-complete-guide-to-default-props-in-react-984ea8e6972d/#:~:text=For%20a%20React%20component%20created,default%20props%20for%20the%20component.
+MovieList.defaultpropTypes = {
+  movies: [{}],
+};
 
 export default MovieList;
