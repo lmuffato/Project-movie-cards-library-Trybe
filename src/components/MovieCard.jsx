@@ -20,12 +20,13 @@ function MovieCard(props) {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.string.isRequired,
-  imagePath: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
 };
 
 export default MovieCard;
