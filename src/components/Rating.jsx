@@ -2,10 +2,13 @@ import React from 'react';
 
 class Rating extends React.Component {
     render() {
-        
+      const movieRating = this.props.rating;
+      console.log(movieRating)
+      
       return (
-    <p>7,8</p>
-
+          <div>
+            <p>{movieRating}</p>           
+        </div>
       )
     }
   }
