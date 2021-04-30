@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.Header {
+  background-color: #0B0C10;
+  font-family: Zen-Dots;
+  align-content: center;
+};

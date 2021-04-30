@@ -1,0 +1,11 @@
+@font-face {
+	font-family: Zen-Dots;
+	src: url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap")
+}
+.Header {
+    background-color: #0B0C10;
+    font-family: Zen-Dots;
+    align-content: center;
+}
+
+
