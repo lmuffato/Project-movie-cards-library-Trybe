@@ -1,6 +1,6 @@
 // import { render } from 'enzyme';
 import React from 'react';
-import './header.css';
+// import './header.css';
 
 class Header extends React.Component {
   render() {
