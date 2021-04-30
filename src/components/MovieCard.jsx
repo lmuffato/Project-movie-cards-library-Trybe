@@ -1,17 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
-    // falta adicionar o rating na desestruturaçao
-    const { imagePath, title, subtitle, storyline } = movie;
+    const { imagePath, title, subtitle, storyline, rating } = movie;
     return (
       <section>
-        <img src={ imagePath } alt={ title } />
-        <h4>{ title }</h4>
-        <h5>{ subtitle }</h5>
-        <p>{ storyline }</p>
+        <div>
+          <img src={ imagePath } alt={ title } />
+          <h4>{ title }</h4>
+          <h5>{ subtitle }</h5>
+          <p>{ storyline }</p>
+        </div>
+        <div>
+          <Rating rating={ rating } />
+        </div>
       </section>
     );
   }
@@ -23,7 +28,7 @@ MovieCard.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
-    // rating: PropTypes.number.isRequired,
+    rating: PropTypes.number.isRequired,
   }).isRequired,
 };
 export default MovieCard;
