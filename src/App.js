@@ -1,4 +1,5 @@
 import React from 'react';
+import movies from './data';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList movies={ ['Batman', 'Marvel'] } />
+      <MovieList movies={ movies } />
     </div>
   );
 }

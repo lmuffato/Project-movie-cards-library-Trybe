@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 
 class MovieCard extends Component {
   render() {
+    const { title } = this.props;
+
     return (
-      <li>Filme</li>
+      <li>{title}</li>
     );
   }
 }

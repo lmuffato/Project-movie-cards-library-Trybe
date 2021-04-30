@@ -7,7 +7,7 @@ class MovieList extends Component {
 
     return (
       <ul>
-        {movies.map((movie, index) => <MovieCard key={ index } movie={ movie } />)}
+        {movies.map((movie) => <MovieCard key={ movie.title } title={ movie.title } />)}
       </ul>
     );
   }
