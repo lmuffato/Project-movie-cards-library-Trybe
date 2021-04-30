@@ -14,3 +14,8 @@ MovieList.propTypes = {
 };
 
 export default MovieList;
+
+// Referências:
+// Recebi ajuda das colegas Heloísa Hackenhaar e Ana Ventura
+// https://github.com/tryber/sd-010-a-project-movie-cards-library/pull/30/files
+// https://github.com/tryber/sd-010-a-project-movie-cards-library/pull/64/files
