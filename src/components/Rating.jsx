@@ -6,13 +6,17 @@ class Rating extends Component {
     const { rating } = this.props;
 
     return (
-      <span>{rating}</span>
+      <span className="rating">{rating}</span>
     );
   }
 }
 
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
+};
+
+Rating.defaultProps = {
+  rating: 3,
 };
 
 export default Rating;
