@@ -29,7 +29,13 @@ function MovieCard(props) {
 }
 
 MovieCard.propTypes = {
-  movies: PropTypes.object.isRequired,
+  movies: PropTypes.shape({
+    imagePath: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
 };
 
 export default MovieCard;
