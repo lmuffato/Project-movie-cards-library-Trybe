@@ -6,12 +6,16 @@ import PropTypes from 'prop-types';
 function Rating(props) {
   const { rating } = props;
   return (
-    <p className='rating'>{rating}</p>
+    <p className="rating">{rating}</p>
   );
 }
 
 Rating.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.number,
+};
+
+Rating.defaultProps = {
+  rating: 0,
 };
 
 export default Rating;
