@@ -4,7 +4,7 @@ body {
   font-size: 16px;
 }
 
-.itulo {
+.titulo {
   background-color: #343a40;
   height: 50px;
   text-align: center;
@@ -25,7 +25,8 @@ body {
   text-align: center;
 }
 
-.movie-list {
+main.movie-list {
+  background-color: rgba(100, 87, 87, 0.125);
   display: flex;
   flex-flow: row wrap;
   padding: 48px 30px;
