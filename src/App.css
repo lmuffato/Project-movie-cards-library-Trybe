@@ -23,9 +23,9 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center, space-around;
   padding: 48px 30px;
-  justify-content: center;
-  justify-content: space-around;
+ 
 }
 
 .movie-card {
@@ -36,9 +36,9 @@ body {
   flex-direction: column;
   height: 450px;
   margin: 5px;
+  margin-bottom: 40px;
   overflow: hidden;
   width: 300px;
-  margin-bottom: 40px;
 }
 
 
@@ -58,7 +58,7 @@ body {
 }
 
 .movie-card-subtitle {
-  color:blueviolet;
+  color: blueviolet;
   font-size: 16px;
   font-weight: 500;
   margin: 0 0 8px;
