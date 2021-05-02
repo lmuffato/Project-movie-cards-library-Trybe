@@ -25,7 +25,7 @@ body {
   text-align: center;
 }
 
-main.movie-list {
+.movie-list {
   background-color: rgba(100, 87, 87, 0.125);
   display: flex;
   flex-flow: row wrap;
