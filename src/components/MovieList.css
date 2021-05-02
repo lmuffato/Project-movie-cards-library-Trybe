@@ -1,5 +1,5 @@
-.movie-list{
-    border: 1px solid red;
-    display: flex;
-    flex-direction: row;
+.movie-list {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
 }
