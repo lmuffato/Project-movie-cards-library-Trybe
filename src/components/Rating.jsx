@@ -1,9 +1,10 @@
-// implement Rating component here
-import React from 'react';
+// // implement Rating component here
+// import React from 'react';
 
-function Rating() {
-  return (<h1>Movie Cards Library</h1>
-  );
-}
+// // function Rating(rating) {
+// //   return (
+// //     // <h1 className="rating"> { rating } </h1>
+// //   );
+// // }
 
-export default Rating;
+// export default Rating;

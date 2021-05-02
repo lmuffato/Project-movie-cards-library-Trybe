@@ -1,18 +1,18 @@
 // implement MovieList component here
+import PropTypes from 'prop-types';
 import React from 'react';
 import MovieCard from './MovieCard';
 
-function MovieList() {
-  const movies = ['A barraca do beijo1', 'A barraca do beijo2', 'A barraca do beijo3'];
-  const returnMovies = movies.map((item, index) => (<li key={ index }>{item}</li>));
+function MovieList(props) {
+  const { filme } = props;
   return (
-    <div>
-      <MovieCard />
-      <ul>
-        {returnMovies}
-      </ul>
-    </div>
+    <ul className="movie-list">
+      {filme.map((movie) => <MovieCard filmes={ movie } key={ movie.title } />)}
+    </ul>
   );
 }
 
+MovieList.propTypes = {
+  filme: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export default MovieList;
