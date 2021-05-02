@@ -4,7 +4,9 @@ import '../css/rating.css';
 function Rating(prop) {
   const movies = prop;
   return (
-    <div className="rating">{movies.rating}</div>
+    <div className="container-rating">
+      <div className="rating">{movies.rating}</div>
+    </div>
   );
 }
 

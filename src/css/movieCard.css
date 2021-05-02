@@ -6,12 +6,29 @@
 }
 
 .cart-film {
+  background-color: rgb(87, 82, 76);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 10px;
   width: 250px;
 }
 
 .image-film {
-  width: 250px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.storyline-film {
+  min-height: 108px;
+}
+
+.title-film {
+  margin-bottom: 3px;
+}
+
+.subtitle-film {
+  margin-bottom: 5px;
 }
