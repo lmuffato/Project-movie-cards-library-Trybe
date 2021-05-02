@@ -4,15 +4,15 @@ import React from 'react';
 import MovieCard from './MovieCard';
 
 function MovieList(props) {
-  const { filme } = props;
+  const { movies } = props;
   return (
     <ul className="movie-list">
-      {filme.map((movie) => <MovieCard filmes={ movie } key={ movie.title } />)}
+      {movies.map((element) => <MovieCard movie={ element } key={ element.title } />)}
     </ul>
   );
 }
 
 MovieList.propTypes = {
-  filme: PropTypes.arrayOf(PropTypes.object).isRequired,
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 export default MovieList;

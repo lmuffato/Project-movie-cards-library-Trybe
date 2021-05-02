@@ -1,10 +1,16 @@
-// // implement Rating component here
-// import React from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-// // function Rating(rating) {
-// //   return (
-// //     // <h1 className="rating"> { rating } </h1>
-// //   );
-// // }
+function Rating(props) {
+  const { rating } = props;
+  return (
+    <h1 className="rating">
+      { rating }
+    </h1>
+  );
+}
 
-// export default Rating;
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
+export default Rating;
