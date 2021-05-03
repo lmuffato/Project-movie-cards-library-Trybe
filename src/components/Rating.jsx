@@ -6,11 +6,7 @@ function Rating(props) {
 
   return (
     <div className="rating">
-      <p>
-        {' '}
-        { rating }
-        {' '}
-      </p>
+      { rating }
     </div>
   );
 }
