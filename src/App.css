@@ -1,83 +1,41 @@
+.Card {
+  width: 280px;
+  border: 1px gray solid;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  align-self: center;
+  background-color: white;
+}
 body {
-  background-color: whitesmoke;
-  box-sizing: border-box;
-  font-size: 16px;
+  background-color: black;
 }
 
-.movie-card-header {
-  align-items: center;
-  background-color: #343a40;
+img {
+  width: 200px;
+}
+
+.List {
   display: flex;
-  height: 100px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.page-title {
-  color: #f8f9fa;
-  font-size: 28px;
-  font-weight: 500;
+h1 {
   text-align: center;
+  background-color: lightblue;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
 }
 
-.movie-list {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 48px 30px;
-}
-
-.movie-card {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-  margin: 5px;
-  overflow: hidden;
-  width: 300px;
-}
-
-
-.movie-card-image {
-  width: 100%;
-}
-
-.movie-card-body {
-  flex: 1 1 auto;
-  padding: 20px;
-}
-
-.movie-card-title {
-  font-size: 24px;
-  font-weight: 500;
-  margin: 0 0 12px;
-}
-
-.movie-card-subtitle {
-  color: #6c757d;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0 0 8px;
-}
-
-.movie-card-storyline {
-  font-size: 14px;
-  text-align: justify;
+p {
+  height: 120px;
 }
 
 .rating {
-  background-color: #007bff;
-  border-radius: 25px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 3px 9px;
-}
-
-.movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  display: flex;
-  justify-content: flex-end;
-  padding: 12px 20px;
+  background-color: lightblue;
+  border-radius: 5px;
 }

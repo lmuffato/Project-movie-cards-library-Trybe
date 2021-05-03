@@ -5,7 +5,7 @@ import Rating from './Rating';
 function MovieCard(props) {
   const { movie: { title, subtitle, storyline, rating, imagePath } } = props;
   return (
-    <section>
+    <section className="Card">
       <img src={ imagePath } alt={ title } />
       <h4>{title}</h4>
       <h5>{subtitle}</h5>

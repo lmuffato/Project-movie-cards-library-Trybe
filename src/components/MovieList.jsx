@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 function MovieList(props) {
   const { movies } = props;
   return (
-    <section>
+    <section className="List">
       {movies.map((movie) => (<MovieCard key={ movie.title } movie={ movie } />)) }
     </section>
   );
