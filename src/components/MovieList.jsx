@@ -11,7 +11,7 @@ class MovieList extends React.Component {
     );
   }
 }
-
+// aqui é feito o propType de todo o array de objetos movie
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
