@@ -1,12 +1,12 @@
 .Card {
-  width: 280px;
-  border: 1px gray solid;
-  border-radius: 10px;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
   align-self: center;
   background-color: white;
+  border: 1px gray solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 280px;
 }
 body {
   background-color: black;
@@ -23,12 +23,12 @@ img {
 }
 
 h1 {
-  text-align: center;
   background-color: lightblue;
-  width: 500px;
+  border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
+  text-align: center;
+  width: 500px;
 }
 
 p {
