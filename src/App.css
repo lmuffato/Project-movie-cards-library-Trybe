@@ -1,12 +1,12 @@
 body {
-  background-color: whitesmoke;
+  background-color: #181818;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background-color: #302e5d;
   display: flex;
   height: 100px;
   justify-content: center;
@@ -26,8 +26,8 @@ body {
 }
 
 .movie-card {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #f8f7ff;
+  border: 1px solid rgba(0, 0, 0, 0.555);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -35,6 +35,10 @@ body {
   margin: 5px;
   overflow: hidden;
   width: 300px;
+}
+
+.movie-card:hover {
+  border: 2px solid #58168d;
 }
 
 
