@@ -7,13 +7,19 @@ class MovieCard extends React.Component {
     const { movie } = this.props;
 
     return (
-      <img src={ movie.imagePath } alt={ movie.imagePath } />
+      <section>
+        <img src={ movie.imagePath } alt="foto_filme" />
+        <h4>{ movie.title }</h4>
+      </section>
     );
   }
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.arrayOf.isRequired,
+  movie: PropTypes.shape({
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default MovieCard;
