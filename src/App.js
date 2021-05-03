@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList moviesApp={ movies } />
+      <MovieList movies={ movies } />
     </div>
   );
 }
@@ -17,7 +17,7 @@ function App() {
 export default App;
 
 /*
-1. App recebe o array de0 objetos 'movies' do componente './data'
+1. App recebe o array de objetos 'movies' do componente './data'
 2.1. App.js chama Header que retorna com seus elementos;
-2.2. App chama MovieList enviando o array 'movies' como parâmetro 'moviesApp'
+2.2. App chama MovieList enviando o array 'movies' como parâmetro 'movies'
 */

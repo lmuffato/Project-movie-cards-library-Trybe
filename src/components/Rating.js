@@ -4,18 +4,18 @@ import React, { Component } from 'react';
 
 class Rating extends Component {
   render() {
-    const { ratingMC } = this.props;
-    console.log(`Rating.js -> raint === ${ratingMC}`); // TESTE para conferência
+    const { rating } = this.props;
+    console.log(`Rating.js -> raint === ${rating}`); // TESTE para conferência
     return (
       <div>
-        <span className="rating">{ratingMC}</span>
+        <span className="rating">{rating}</span>
       </div>
     );
   }
 }
 
 Rating.propTypes = {
-  ratingMC: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired,
 };
 
 export default Rating;
