@@ -1,18 +1,22 @@
 import React from 'react';
 
 class Rating extends React.Component {
-    render() {
-      const movieRating = this.props.rating;
-      console.log(movieRating)
-      
-      return (
-          <div>
-            <p>{movieRating}</p>           
-        </div>
-      )
-    }
+  render() {
+    const { rating } = this.props;
+    // console.log(this.props.rating);
+    return (
+      <div>
+        <p>{rating}</p>
+      </div>
+    );
   }
-  
+}
 
+Rating.defaultProps = {
+  rating: 3,
+};
+
+Rating.propTypes = {
+  rating: PropTypes.number,
+};
 export default Rating;
-
