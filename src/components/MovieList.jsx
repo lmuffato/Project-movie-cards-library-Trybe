@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
-    const allMovies = movies
+    const allMovies = movies;
     return (
       <div>
         { allMovies.map((movie, index) => {
