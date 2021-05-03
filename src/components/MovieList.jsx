@@ -28,7 +28,7 @@ MovieList.propTypes = {
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     rating: PropTypes.number,
-    imagePath: PropTypes.string })
-}
+    imagePath: PropTypes.string }),
+};
 
 export default MovieList;
