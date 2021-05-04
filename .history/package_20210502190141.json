@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "prop-types": "^15.7.2",
     "acorn": ">=7.1.1",
     "minimist": ">=1.2.3",
     "react": "^16.11.0",
