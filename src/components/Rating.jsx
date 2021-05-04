@@ -4,7 +4,11 @@ import React from 'react';
 
 class Rating extends React.Component {
   render() {
-    return <p>estrelas rating</p>;
+    return (
+      <div>
+        <p>estrelas rating</p>
+      </div>
+    );
   }
 }
 

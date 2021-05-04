@@ -6,7 +6,10 @@ class MovieCard extends React.Component {
   render() {
     return (
       <div>
-        <p>teste cartao de filme</p>
+        <img src="" alt="" />
+        <h4>Titulo</h4>
+        <h5>SubTitulo</h5>
+        <p>Sinopse</p>
         <Rating />
       </div>
     );
