@@ -4,7 +4,7 @@ import React from 'react';
 function MovieList(props) {
   return (
     <div>
-      {props.moveis}
+      {props.movies}
     </div>
   );
 }
