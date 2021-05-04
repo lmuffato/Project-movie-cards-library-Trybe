@@ -35,3 +35,5 @@ MovieCard.propTypes = {
 };
 
 export default MovieCard;
+
+// Códigos acima foram baseados nas aulas ao vivo das turmas 9 e 10A e nos exercícios do course.
