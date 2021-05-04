@@ -2,10 +2,15 @@
 // Iniciando o projeto 🚀
 
 import React from 'react';
+// import '../css/header.css'
 
 class Header extends React.Component {
   render() {
-    return <h1>Movie Cards Library</h1>;
+    return (
+      <header>
+        <h1>Movie Cards Library</h1>
+      </header>
+    );
   }
 }
 
