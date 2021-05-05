@@ -1,8 +1,6 @@
-import React from 'react'
-
+import React from 'react';
 
 function Header() {
-  
   return (
     <header>
       <h1>Movie Cards Library</h1>

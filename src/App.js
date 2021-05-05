@@ -8,9 +8,9 @@ function App() {
   console.log(database);
   return (
     <div className="App">
-      <Header />  
-      <MovieList movies = {database} />
-    </div>      
+      <Header />
+      <MovieList movies= { database } />
+    </div>
   );
 }
 
