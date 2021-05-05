@@ -1,10 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-import database from './data'
+import database from './data';
 import './App.css';
-
-
 
 function App() {
   console.log(database);
@@ -12,8 +10,8 @@ function App() {
     <div className="App">
       <Header />  
       <MovieList movies = {database} />
-  </div>      
+    </div>      
   );
 }
 
-export default App
+export default App;
