@@ -1,13 +1,19 @@
 import React from 'react';
-import './App.css';
 import Header from './components/Header';
+import MovieList from './components/MovieList';
+import database from './data'
+import './App.css';
+
+
 
 function App() {
+  console.log(database);
   return (
     <div className="App">
-      <Header />
-    </div>
+      <Header />  
+      <MovieList movies = {database} />
+  </div>      
   );
 }
 
-export default App;
+export default App
