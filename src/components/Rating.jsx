@@ -9,7 +9,6 @@ class Rating extends React.Component {
     return (
       <div>
         <p className="rating">
-          Rate:
           {rating}
         </p>
       </div>
