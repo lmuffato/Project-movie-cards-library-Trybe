@@ -43,6 +43,10 @@ body {
 }
 
 .movie-card-body {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 3px;
+  margin: 15px;
   flex: 1 1 auto;
   padding: 20px;
 }
@@ -80,4 +84,13 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+h4:hover {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+h4:active {
+  color: #6c757d;
 }
