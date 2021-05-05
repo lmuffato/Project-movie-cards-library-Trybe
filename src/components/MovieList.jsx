@@ -13,8 +13,8 @@ class MovieList extends Component {
   }
 }
 
-  MovieList.propTypes = {
-    database: PropTypes.arrayOf(PropTypes.object).isRequired,
-  };
+MovieList.propTypes = {
+  database: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default MovieList;
