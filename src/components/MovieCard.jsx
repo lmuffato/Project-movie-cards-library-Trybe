@@ -6,16 +6,20 @@ class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
     let rating;
-    if ('rating' in movie) (rating = movie.rating)
-    else if ('ratingThree' in movie) (rating = movie.ratingThree)
+    if ('rating' in movie) (rating = movie.rating);
+    else if ('ratingThree' in movie) (rating = movie.ratingThree);
 
     return (
-      <section className='movie-card'>
-        <h4>{movie.title}</h4>
-        <h5>{movie.subtitle}</h5>
-        <p>{movie.storyline}</p>
-        <Rating rating={ rating } />
-        <img src={ movie.imagePath } alt="" />
+      <section className="movie-card">
+        <section className="movie-card-image">
+          <img src={ movie.imagePath } alt="teste" />
+        </section>
+        <section className="movie-card-body">
+          <h4 className="movie-card-title">{movie.title}</h4>
+          <h5 className="movie-card-subtitle">{movie.subtitle}</h5>
+          <p className="movie-card-storyline">{movie.storyline}</p>
+          <Rating rating={ rating } />
+        </section>
       </section>
     );
   }
