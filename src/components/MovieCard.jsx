@@ -5,13 +5,16 @@ import Rating from './Rating';
 class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
+    let rating;
+    if ('rating' in movie) (rating = movie.rating)
+    else if ('ratingThree' in movie) (rating = movie.ratingThree)
+
     return (
-      <section>
+      <section className='movie-card'>
         <h4>{movie.title}</h4>
         <h5>{movie.subtitle}</h5>
         <p>{movie.storyline}</p>
-        <Rating rating={ movie.rating } />
-        <p>{movie.ratingThree}</p>
+        <Rating rating={ rating } />
         <img src={ movie.imagePath } alt="" />
       </section>
     );
