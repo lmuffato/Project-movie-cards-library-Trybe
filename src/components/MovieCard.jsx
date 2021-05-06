@@ -2,7 +2,8 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    const { title } = this.props.movie;
+    const { movie } = this.props;
+    const { title } = movie;
     return (
       <section>
         <h4>{title}</h4>
@@ -10,5 +11,11 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+  }).isRequired,
+};
 
 export default MovieCard;
