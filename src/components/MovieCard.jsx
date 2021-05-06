@@ -10,7 +10,8 @@ class MovieCard extends React.Component {
         <h4>{movie.title}</h4>
         <h5>{movie.subtitle}</h5>
         <p>{movie.storyline}</p>
-        <Rating movie={ movie } />
+        <Rating rating={ movie.rating } />
+        <p>{movie.ratingThree}</p>
         <img src={ movie.imagePath } alt="" />
       </section>
     );
@@ -22,8 +23,16 @@ MovieCard.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number,
+    ratingThree: PropTypes.number,
     imagePath: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
+};
+
+MovieCard.defaultProps = {
+  movie: PropTypes.shape({
+    ratingThree: null,
+  }),
 };
 
 export default MovieCard;
