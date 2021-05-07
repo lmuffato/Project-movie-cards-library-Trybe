@@ -1,19 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Rating from './Rating';
 import './MovieCard.css';
 
-export default function MovieCard(prop) {
-  const { movie } = prop;
-  const { imagePath, title, subtitle, storyline, rating } = movie;
-  return (
-    <div className="movie-card">
-      <img src={ imagePath } alt={ `Imagem de ${title}` } />
-      <div className="textContent">
-        <h4>{ title }</h4>
-        <h5>{ subtitle }</h5>
-        <p>{ storyline }</p>
-        <Rating rating={ rating } />
+class MovieCard extends Component {
+  render() {
+    const { movies } = this.props;
+    return (
+      <div className="movie-card">
+        <img src={ movies.imagePath } alt={ `Imagem de ${movies.title}` } />
+        <div className="textContent">
+          <h4>{ movies.title }</h4>
+          <h5>{ movies.subtitle }</h5>
+          <p>{ movies.storyline }</p>
+          <Rating rating={ movies.rating } />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
+MovieCard.propTypes = {
+  movies: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    imagePath: PropTypes.string.isRequired,
+  }).isRequired,
+};
+export default MovieCard;
