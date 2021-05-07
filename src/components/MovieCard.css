@@ -14,7 +14,7 @@
 .MovieCard h5 {
   font-size: 20px;
   opacity: 50%;
- }
+}
 
 img {
   width: 300px;
@@ -24,7 +24,3 @@ img {
   width: 90%;
 }
 
-.rating {
-  width: 10%;
-  margin: 5px 0;
-}
