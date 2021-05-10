@@ -1,13 +1,14 @@
 // implement MovieList component here
 import React from 'react';
 
-function MovieList(props) {
-  const { movies } = props;
-  return (
-    <div>
-      {movies}
-    </div>
-  );
+class MovieList extends React.Component {
+  render() {
+    return (
+      <section className="movie-list">
+        <p>{ console.log(this.props) }</p>
+      </section>
+    );
+  }
 }
 
 export default MovieList;
