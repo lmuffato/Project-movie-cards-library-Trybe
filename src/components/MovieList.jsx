@@ -7,7 +7,7 @@ export default class MovieList extends Component {
     const { movies } = this.props;
     return (
       <section>
-        {movies.map((movie) => <MovieCard key={ movie.id } movie={ movie } />)}
+        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </section>
     );
   }
