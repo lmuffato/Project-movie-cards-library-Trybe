@@ -8,7 +8,9 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header title="Movie Cards Library" />
+        <header>
+          <Header title="Movie Cards Library" />
+        </header>
         <MovieList moviesList={ DataMovies } />
       </div>
     );
