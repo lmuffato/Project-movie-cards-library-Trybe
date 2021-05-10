@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function Header() {
-  return (
-    <header>
-      <h1>Movie Cards Library</h1>
-    </header>
-  );
+export default class Header extends Component {
+  render() {
+    const { title } = this.pros;
+    return (
+      <header>
+        <h1>{title}</h1>
+      </header>
+    );
+  }
 }
-
-export default Header;

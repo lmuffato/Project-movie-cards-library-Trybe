@@ -12,7 +12,7 @@ export default class MovieCard extends Component {
           {title}
         </h4>
         <h5>
-          Tubtitlo:
+          Subtitlo:
           {subtitle}
         </h5>
         <p>
