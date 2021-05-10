@@ -6,7 +6,7 @@ export default class MovieCard extends Component {
   render() {
     const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
-      <div>
+      <section className="cards">
         <h4>
           {title}
         </h4>
@@ -16,9 +16,9 @@ export default class MovieCard extends Component {
         <p>
           {storyline}
         </p>
-        <img src={ imagePath } alt="Imagens movies" />
+        <img src={ imagePath } alt="Imagens movies" className="img" />
         <Rating rating={ rating } />
-      </div>
+      </section>
     );
   }
 }
