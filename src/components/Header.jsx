@@ -4,7 +4,7 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <h1 className="title-h1">Movir Cards Library</h1>
+        <h1 className="title-h1">Movie Cards Library</h1>
       </header>
     );
   }
