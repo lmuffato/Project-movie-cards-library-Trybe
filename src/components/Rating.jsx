@@ -5,7 +5,7 @@ class Rating extends Component {
   render() {
     const { rating } = this.props;
     return (
-      <div>
+      <div className="rating">
         <span>{rating}</span>
       </div>
     );
@@ -13,7 +13,11 @@ class Rating extends Component {
 }
 
 Rating.propTypes = {
-  rating: PropTypes.oneOfType(PropTypes.number, PropTypes.string).isRequired,
+  rating: PropTypes.oneOfType(
+    PropTypes.number,
+    PropTypes.string,
+    PropTypes.func,
+  ).isRequired,
 };
 
 export default Rating;
