@@ -5,7 +5,7 @@ import Rating from './Rating';
 class MovieCard extends React.Component {
   render() {
     const { movie } = this.props;
-    const { title, subtitle, storyline, imagePath } = movie;
+    const { title, subtitle, imagePath, storyline, rating } = movie;
     return (
       <div>
         <h4>
@@ -18,7 +18,7 @@ class MovieCard extends React.Component {
         <p>
           { storyline }
         </p>
-        <Rating />
+        <Rating rating={ rating } />
       </div>
     );
   }
