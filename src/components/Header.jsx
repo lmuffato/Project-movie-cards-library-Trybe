@@ -7,7 +7,7 @@ class Hearder extends React.Component {
         <h1>Movie Cards Library</h1>
       </header>
     );
-  } 
+  }
 }
 
-export default Hearder
+export default Hearder;
