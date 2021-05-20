@@ -6,10 +6,10 @@ class MovieCard extends React.Component {
     return (
       <div>
         <div>
-          <img src='' alt="Capa do filme" />
-          <h4></h4>
-          <h5></h5>
-          <p></p>
+          <img src="" alt="Capa do filme" />
+          <h4>javascript</h4>
+          <h5>javascript</h5>
+          <p>javascript</p>
         </div>
       </div>
     );
