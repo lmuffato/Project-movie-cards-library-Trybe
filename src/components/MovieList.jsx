@@ -1,16 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-function MovieList() {
+function MovieList({ movies }) {
+  console.log(movies);
   return (
     <div>
-      <MovieCard
-        className="MovieList"
-      />
+      {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
     </div>
   );
 }
 
-export default MovieList;
+MovieList.propTypes = {
+  movies: PropTypes.shape(),
+}.isRequired;
 
-// vishmaria
+export default MovieList;
