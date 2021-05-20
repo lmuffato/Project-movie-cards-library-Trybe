@@ -6,8 +6,8 @@ function MovieCard({ movie }) {
   return (
     <div className="movie-card">
       <img src={ movie.imagePath } alt={ `foto ${movie.title}` } />
-      <h2>{ movie.title }</h2>
-      <h3>{ movie.subtitle }</h3>
+      <h4>{ movie.title }</h4>
+      <h5>{ movie.subtitle }</h5>
       <p>{ movie.storyline }</p>
       <Rating
         rating={ movie.rating }
