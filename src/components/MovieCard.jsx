@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 
 function MovieCard({ movie }) {
   return (
@@ -8,6 +9,9 @@ function MovieCard({ movie }) {
       <h2>{ movie.title }</h2>
       <h3>{ movie.subtitle }</h3>
       <p>{ movie.storyline }</p>
+      <Rating
+        rating={ movie.rating }
+      />
     </div>
   );
 }
