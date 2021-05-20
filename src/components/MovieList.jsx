@@ -1,9 +1,12 @@
 import React from 'react';
+import MovieCard from './MovieCard';
 
 function MovieList() {
   return (
-    <div className="MovieList">
-      Movielist aqui
+    <div>
+      <MovieCard
+        className="MovieList"
+      />
     </div>
   );
 }
