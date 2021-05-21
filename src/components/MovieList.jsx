@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
@@ -6,6 +7,7 @@ class MovieList extends Component {
     return (
       <section>
         <h1>Movie List</h1>
+        <MovieCard />
       </section>
     );
   }
