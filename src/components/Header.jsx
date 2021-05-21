@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Hearder extends React.Component {
+class Header extends React.Component {
   render() {
     return (
       <header>
@@ -10,4 +10,4 @@ class Hearder extends React.Component {
   }
 }
 
-export default Hearder;
+export default Header;
