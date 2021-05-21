@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 class MovieList extends Component {
   render() {
-    const { movie } = this.props;
+    // const { movie } = this.props;
     return (
       <section>
-        <h1>texto</h1>
+        <h1>Movie List</h1>
       </section>
     );
   }
