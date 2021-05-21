@@ -1,5 +1,5 @@
 import React from 'react';
-import MoviesData from '..data/'
+import MoviesData from '../data';
 
 class MovieCard extends React.Component {
   render() {
